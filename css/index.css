@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Nunito, sans-serif;
+    line-height: 22px;
+    
+}
+* {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.hidden {
+    display: none;
+}
+.flex {
+    display: flex;
+}
+
+
+@media only screen and (min-width: 810px) {
+    nav i.fa-bars {display: none;}
+    nav div.big-nav {
+        width: 90%;
+        align-items: center;
+        margin-top: 10px;
+        display: flex;
+        font-weight: bold;
+    }
+    nav div.big-nav ul a {
+        color: #000000;
+    }
+    nav div.big-nav ul a:hover {
+        color: #FF7800;
+    }
+    nav div.big-nav ul a li {
+        display: inline;
+        padding: 15px 5px;
+    }
+    nav div.big-nav div {
+        display: inline;
+        margin-left: auto;
+        padding: 10px;
+    }
+    nav div.big-nav div a {
+        padding: 8px 20px;
+        color: #000000;
+    }
+    nav div.big-nav div a:hover {
+        color: #FF7800;
+    }
+    nav div.big-nav div a:last-child {
+        border-radius: 4px;
+        border: 1.5px solid #49B665;
+        color: #49B665;
+        font-weight: 900;
+    }
+    nav div.big-nav div a:last-child:hover {
+        background-color: #49B665;
+        color: #ffffff;
+    }
+    nav div.small-nav {display: none;}
+}
+
+nav {
+    height: 10vh;
+    background-color: #E5E5E5;
+}
+nav figure {
+    width: 5%;
+}
+nav figure img {
+    width: 100%;
+}
+nav i.fa-bars {
+    font-size: 2.5em;
+    margin-left: auto;
+    padding: 10px 20px;
+}
+nav div.small-nav {
+    text-align: center;
+    background-color: rgba(22, 21, 21, 0.5);
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+}
+nav div.small-nav a {
+    padding: 10px;
+    display: block;
+    color: #ffffff;
+}
+nav div.small-nav a:hover {
+    color: #FF7800;
+}
+
