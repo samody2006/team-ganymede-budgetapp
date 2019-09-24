@@ -1,0 +1,61 @@
+#landing-page-images-container {
+    background: url('../images/hector-j-rivas-1FxMET2U5dU-unsplash\(1\).png');
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+}
+
+#landing-page-images-right {
+    background: url('../images/adeolu-eletu-unRkg2jH1j0-unsplash\ 2.png');
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+}
+
+#landing-page-images-left {
+    background: url('../images/hector-j-rivas-1FxMET2U5dU-unsplash\(1\)\ \(1\).png');
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    /* display: flex; */
+}
+
+#landing-page-images-left h2 {
+    color: white;
+    text-align: center;
+    margin-top: 30%;
+    margin-left: 15%;
+}
+
+#landing-page-images-left p {
+    color: white;
+    text-align: justify;
+    margin-left: 20%;
+    font-size: 1.15rem;  
+}
+
+#about-paragraph{
+    text-align: justify;
+}
+
+@media (max-width: 800px) {
+    #landing-page-images-right {
+        display: none;
+    }
+
+    #landing-page-images-left h2 {
+        color: white;
+        text-align: center;
+        margin-top: 30%;
+        margin-left: 0;
+    }
+    
+    #landing-page-images-left p {
+        color: white;
+        text-align: justify;
+        margin-left: 0;
+        font-size: 1.15rem;  
+    }
+}
