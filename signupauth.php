@@ -39,7 +39,7 @@ if($password === $password2){
 
     //add details to database if all the check is passed
     $sql = "INSERT INTO `user` (username, password_hash, email, created_at)
-     VALUES ('$username', '$pass', '$email', '$date";
+     VALUES ('$username', '$pass', '$email', '$date'";
      $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
 
      if($query){
