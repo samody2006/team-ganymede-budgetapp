@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="login.css" />
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
+
+		<!--MODAL LOGIN STARTS HERE-->
+		<div class="login-container">
+			<div class="welcome-back">
+				<h1 class="h1-welcome-back" style="	color: white;">
+					Welcome back
+					<img
+						class="close-button"
+						src="https://res.cloudinary.com/joshuafolorunsho/image/upload/v1569317018/close_button.svg"
+						alt="close icon"
+					/>
+				</h1>
+			</div>
+			<div class="email-username">
+				<button class="cta email-cta">Email</button>
+				<button class="cta username-cta">Username</button>
+			</div>
+			<div class="form">
+				<form action="" method="POST">
+					<table>
+						<tr class="email-tr">
+							<td>
+								<label for="Email">Email</label>
+							</td>
+						</tr>
+						<tr class="email-tr">
+							<td>
+								<input
+									type="email"
+									name="email"
+									id="email"
+									placeholder="Enter your email address"
+								/>
+							</td>
+						</tr>
+						<tr class="username-tr">
+							<td>
+								<label for="username">Username</label>
+							</td>
+						</tr>
+						<tr class="username-tr">
+							<td>
+								<input
+									type="text"
+									name="username"
+									id="username"
+									placeholder="Enter your username"
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="Password">Password</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input
+									type="password"
+									name="password"
+									id="password"
+									placeholder="Enter your password"
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" name="checkbox" id="checkbox" />
+								<p class="remember-me">Remember me</p>
+								<p class="forgot-password">
+									Forgot password? <a href="#">Recover here</a>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="submit" value="LOGIN" id="login" />
+							</td>
+						</tr>
+					</table>
+				</form>
+				<div class="info">
+					<p class="signup-info">Not a member yet? <a href="#">Sign Up</a></p>
+					<p class="recommendation-info">
+						If you are using a public/shared computer, we recommend that you
+						logout to prevent any un-authorised access to your account.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--MDOAL LOGIN ENDS HERE-->
+
+		<script src="login.js" async defer></script>
+	</body>
+</html>
