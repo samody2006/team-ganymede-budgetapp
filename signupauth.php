@@ -37,8 +37,8 @@ if($password === $password2){
 
     //add details to database if all the check is passed
     $sql = "INSERT INTO `user` (username, password_hash, email, created_at)
-     VALUES ('$username', '$pass', '$email', now())"
-     $query = mysli_query($conn, $sql) or die(mysqli_error($conn));
+     VALUES ('$username', '$pass', '$email', now())";
+     $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
 
      if($query){
          header("Refresh:3, url=dashboard.html");
