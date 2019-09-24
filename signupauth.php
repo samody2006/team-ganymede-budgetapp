@@ -10,7 +10,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 $password2 = $_POST['password2'];
 
-$pass = md5($password);
+$pass = password_hash($password);
 date_default_timezone_set("Africa/Lagos");
 $date = date("Y-m-d H: i:s", time());
 
