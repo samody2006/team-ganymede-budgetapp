@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Nunito, sans-serif;
+    font-family: 'Nunito', sans-serif;
     line-height: 22px;
     
 }
@@ -22,6 +22,114 @@ a {
 .flex {
     display: flex;
 }
+
+
+section.banner {
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    min-height: 80vh;
+}
+section.banner::after {
+    content: "";
+    background: url("https://res.cloudinary.com/nkechi-christabel/image/upload/v1569262445/luff50lhbfzfe2wjwyd4.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+.intro-container {
+    height: 30vh; 
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.overlay-text {
+    position: absolute;
+    top:  20%;
+    right: 50%;
+    left:10%;
+    color: #fff;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.heading {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.09em;
+    padding-bottom: 5%;
+    animation-name: moveInLeft; 
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.overlay-text p{
+   font-weight: 900;
+   font-size: 20px;
+   line-height: 40px;
+   letter-spacing: 0.07em;
+   animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+     opacity: 0;
+     transform: translateX(-100px);
+    }
+
+    80%{
+     transform: translateX(10px);
+    }
+
+    100%{
+     opacity: 1;
+     transform: translate(0);
+    }
+}
+@keyframes moveInRight {
+    0% {
+     opacity: 0;
+     transform: translateX(100px);
+    }
+
+    80%{
+     transform: translateX(-10px);
+    }
+
+    100%{
+     opacity: 1;
+     transform: translate(0);
+    }
+}
+
+@media only screen and (max-width: 718px) {
+    .overlay-text{ 
+        width: 90%;
+        top: 13%;
+    }   
+}
+@media only screen and (max-width: 566px) {
+    .overlay-text {
+        width: 80%
+    }    
+}
+@media only screen and (max-width: 428px) {
+    .overlay-text{
+        top: 5%;
+    }
+}
+@media only screen and (max-width: 343px) {
+    .overlay-text p {
+        line-height: 30px;
+    }
+}
+
 
 
 @media only screen and (min-width: 810px) {
@@ -85,10 +193,11 @@ nav i.fa-bars {
 }
 nav div.small-nav {
     text-align: center;
-    background-color: rgba(22, 21, 21, 0.5);
+    background-color: rgba(8, 8, 8, 0.7);
     width: 100%;
     position: absolute;
     top: 10vh;
+    z-index: 1;
 }
 nav div.small-nav a {
     padding: 10px;
@@ -98,4 +207,3 @@ nav div.small-nav a {
 nav div.small-nav a:hover {
     color: #FF7800;
 }
-
