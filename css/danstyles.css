@@ -37,7 +37,7 @@
 }
 
 #about-paragraph{
-    text-align: justify;
+    text-align: center;
 }
 
 @media (max-width: 800px) {
