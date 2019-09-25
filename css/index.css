@@ -132,8 +132,12 @@ section.banner::after {
 
 
 @media only screen and (min-width: 540px) {
-    section.tags div {
+    /* div.shadow {
         width: 30% !important;
+    } */
+    div.shadow {
+        margin: 5px;
+        flex: 1;
     }
 }
 @media only screen and (min-width: 810px) {
@@ -218,14 +222,15 @@ input[name='register'] {
 div.modal-header {
     background: #434450;
 }
-section.tags {
+div.row {
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 30px;
+    padding: 5px;
     min-height: 40vh;
 }
-section.tags div {
+div.shadow {
     width: 280px;
+    margin: 5px;
 }
 section.decision-section {width: 100%;}
 section.decision-section div {
@@ -252,4 +257,10 @@ footer a {
     background: #434450;
     color: #E5E5E5;
     font-size: 1.5em;
+}
+div.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
