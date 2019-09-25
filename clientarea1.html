@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Dashboard - Spendless</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./css/clientarea1.css" />
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
+		<div class="dashboard-container">
+			<aside>
+				<img class="logo" src="./svg/logo.png" alt="logo comes here" />
+				<ul class="aside-ul">
+					<li class="home">
+						<img
+							src="https://res.cloudinary.com/joshuafolorunsho/image/upload/v1569399508/home.svg"
+							alt=""
+						/><a href="#"> Home</a>
+					</li>
+					<li>
+						<img
+							src="https://res.cloudinary.com/joshuafolorunsho/image/upload/v1569399508/account_circle.svg"
+							alt=""
+						/><a href="#"> Account</a>
+					</li>
+					<li>
+						<img
+							src="https://res.cloudinary.com/joshuafolorunsho/image/upload/v1569399508/dashboard.svg"
+							alt=""
+						/><a href="#"> Dashboard</a>
+					</li>
+					<li>
+						<img
+							src="https://res.cloudinary.com/joshuafolorunsho/image/upload/v1569399509/settings.svg"
+							alt=""
+						/><a href="#"> Setting</a>
+					</li>
+					<li>
+						<img
+							src="https://res.cloudinary.com/joshuafolorunsho/image/upload/v1569399508/refer_a_friend.svg"
+							alt=""
+						/><a href="#"> Refer a friend</a>
+					</li>
+					<li>
+						<img
+							src="https://res.cloudinary.com/joshuafolorunsho/image/upload/v1569399508/logout.svg"
+							alt=""
+						/><a href="#"> Logout</a>
+					</li>
+				</ul>
+			</aside>
+			<main>
+				<nav>
+					<ul class="main-ul">
+						<li class="why-spendless"><a href="#">Why Spendless</a></li>
+						<li><a href="#">Solutions</a></li>
+						<li><a href="#">Resources</a></li>
+						<li class="how-it-works"><a href="#">How it works</a></li>
+						<li><a href="#">Support</a></li>
+					</ul>
+				</nav>
+				<hr />
+				<div class="main-content">
+					<p>
+						We need information on your income and Expenditure to help you plan
+						better
+					</p>
+					<p>Fill in the following informations:</p>
+					<form action="" method="GET">
+						<label for="net">Net Income:</label>
+						<br />
+						<input
+							type="text"
+							placeholder="Enter your income"
+							pattern="[0-9]{3}"
+							title="Minimum character is 3 and only numbers are allowed"
+							name="netincome"
+							id="net"
+						/>
+						<br />
+						<p class="expenditure">
+							Expenditure <span>(Select according to priority)</span>
+						</p>
+
+						<div class="checkboxes">
+							<table>
+								<tr>
+									<td><input type="checkbox" name="food" /> Food</td>
+									<td>
+										<input class="cb-2" type="checkbox" name="lightbills" />
+										Light Bills
+									</td>
+									<td><input class="cb-3" type="checkbox" name="Fun" /> Fun</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="Clothing" /> Clothing</td>
+									<td>
+										<input class="cb-2" type="checkbox" name="Education" />
+										Education
+									</td>
+									<td>
+										<input class="cb-3" type="checkbox" name="Insurance" />
+										Insurance
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="Taxes" /> Taxes</td>
+									<td>
+										<input class="cb-2" type="checkbox" name="Shopping" />
+										Shopping
+									</td>
+									<td>
+										<input class="cb-3" type="checkbox" name="Miscellaneous" />
+										Miscellaneous
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="Vehicle" /> Vehicle</td>
+									<td>
+										<input class="cb-2" type="checkbox" name="Data" /> Data
+									</td>
+									<td>
+										<input class="cb-3" type="checkbox" name="Airtime" />
+										Airtime
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="submit">
+							<input type="submit" value="Continue" />
+						</div>
+					</form>
+				</div>
+			</main>
+		</div>
+
+		<script src="" async defer></script>
+	</body>
+</html>

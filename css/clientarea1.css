@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 13px;
+	font-family: 'Nunito', sans-serif;
+}
+
+.dashboard-container {
+	display: flex;
+}
+
+aside {
+	width: 350px;
+	height: 100vh;
+	background-color: #41424e;
+	color: white;
+}
+
+.why-spendless,
+.how-it-works,
+aside {
+	display: none;
+}
+aside .home {
+	margin-top: 100px;
+}
+
+a {
+	text-decoration: none;
+}
+aside a {
+	color: white;
+	font-size: 0.8em;
+}
+aside li {
+	width: 160px;
+	margin-top: 20px;
+	border-bottom: 1px solid #fff;
+}
+
+main {
+	width: 100%;
+}
+
+nav {
+	text-align: center;
+	height: 60px;
+}
+
+nav li a {
+	color: #41424e;
+	font-weight: bold;
+}
+
+main li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 5%;
+	line-height: 60px;
+}
+
+.main-content {
+	margin-left: 15px;
+}
+
+p:first-child {
+	margin-top: 20px;
+}
+
+label:first-child {
+	display: inline-block;
+	margin-top: 20px;
+}
+input[type='text'] {
+	width: 200px;
+	height: 30px;
+	padding: 3px;
+	margin-bottom: 20px;
+}
+span {
+	font-size: 0.8em;
+	font-style: italic;
+}
+.checkboxes {
+	margin-top: 10px;
+}
+input[type='checkbox'] {
+	width: 30px;
+}
+
+input[type='submit'] {
+	background-color: #ff7800;
+	color: white;
+	border: none;
+	width: 200px;
+}
+
+.submit {
+	text-align: center;
+	margin-top: 10px;
+}
+@media screen and (min-width: 488px) {
+	* {
+		font-size: 14px;
+	}
+	.logo {
+		margin-top: 15px;
+		margin-left: 20px;
+	}
+
+	aside {
+		display: block;
+		width: 150px;
+	}
+
+	aside .home {
+		margin-top: 50px;
+	}
+
+	aside li {
+		width: 300px;
+		padding-left: 20px;
+	}
+
+	aside li a {
+		font-size: 1.1em;
+	}
+
+	p:first-child {
+		display: inline-block;
+		margin-top: 40px;
+	}
+	.expenditure {
+		padding-top: 30px;
+	}
+
+	nav li a {
+		font-size: 1.1em;
+	}
+	nav li a:hover {
+		border-bottom: 2px solid #ff7800;
+	}
+	label:first-child {
+		display: inline-block;
+		margin-top: 50px;
+	}
+
+	input[type='text'] {
+		width: 180px;
+		height: 35px;
+		padding: 7px;
+		margin-bottom: 20px;
+		outline: none;
+		border: none;
+		border: 1px solid #41424e;
+		border-radius: 5px;
+	}
+	.checkboxes {
+		margin-top: 20px;
+	}
+	input[type='checkbox'] {
+		width: 30px;
+		height: 15px;
+		border-radius: 5px;
+		border: 1px solid #41424e;
+	}
+
+	input[type='submit'] {
+		margin-top: 30px;
+		width: 180px;
+		height: 35px;
+		border-radius: 5px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	* {
+		font-size: 16px;
+	}
+	.logo {
+		margin-top: 15px;
+		margin-left: 30px;
+	}
+
+	aside {
+		display: block;
+		width: 185px;
+	}
+
+	aside .home {
+		margin-top: 50px;
+	}
+
+	aside li {
+		width: 300px;
+		padding-left: 20px;
+	}
+
+	aside li a {
+		font-size: 1.1em;
+	}
+
+	p:first-child {
+		display: inline-block;
+		margin-top: 40px;
+	}
+	.expenditure {
+		padding-top: 30px;
+	}
+
+	.why-spendless {
+		display: inline-block;
+	}
+	nav li a {
+		font-size: 0.9em;
+	}
+	nav li a:hover {
+		border-bottom: 2px solid #ff7800;
+	}
+	label:first-child {
+		display: inline-block;
+		margin-top: 50px;
+	}
+
+	input[type='text'] {
+		width: 300px;
+		height: 45px;
+		padding: 7px;
+		margin-bottom: 20px;
+		outline: none;
+		border: none;
+		border: 1px solid #41424e;
+		border-radius: 5px;
+	}
+	.checkboxes {
+		margin-top: 20px;
+	}
+	input[type='checkbox'] {
+		width: 30px;
+		height: 23px;
+		border-radius: 5px;
+		border: 1px solid #41424e;
+	}
+
+	.cb-2,
+	.cb-3 {
+		margin-left: 20px;
+	}
+
+	input[type='submit'] {
+		margin-top: 30px;
+		width: 300px;
+		height: 45px;
+		border-radius: 5px;
+	}
+}
+
+@media screen and (min-width: 951px) {
+	* {
+		font-size: 19px;
+	}
+	.logo {
+		margin-top: 15px;
+		margin-left: 30px;
+	}
+
+	aside {
+		display: block;
+	}
+
+	aside li {
+		width: 300px;
+		padding-left: 20px;
+	}
+
+	aside li a {
+		font-size: 1.1em;
+	}
+
+	p:first-child {
+		display: inline-block;
+		margin-top: 40px;
+	}
+	.expenditure {
+		padding-top: 70px;
+	}
+
+	.why-spendless,
+	.how-it-works {
+		display: inline-block;
+	}
+	nav li a {
+		font-size: 0.9em;
+	}
+	nav li a:hover {
+		border-bottom: 2px solid #ff7800;
+	}
+	label:first-child {
+		display: inline-block;
+		margin-top: 50px;
+	}
+
+	input[type='text'] {
+		width: 400px;
+		height: 50px;
+		padding: 7px;
+		margin-bottom: 20px;
+		outline: none;
+		border: none;
+		border: 1px solid #41424e;
+		border-radius: 5px;
+	}
+	.checkboxes {
+		margin-top: 20px;
+	}
+	input[type='checkbox'] {
+		width: 30px;
+		height: 23px;
+		border-radius: 5px;
+		border: 1px solid #41424e;
+	}
+
+	.cb-2,
+	.cb-3 {
+		margin-left: 100px;
+	}
+
+	input[type='submit'] {
+		margin-top: 30px;
+		width: 400px;
+		height: 50px;
+		border-radius: 5px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	* {
+		font-size: 23px;
+	}
+	.logo {
+		margin-top: 15px;
+		margin-left: 30px;
+	}
+
+	aside {
+		display: block;
+		width: 365px;
+	}
+
+	aside li a {
+		font-size: 1.1em;
+	}
+
+	p:first-child {
+		display: inline-block;
+		margin-top: 40px;
+	}
+	.expenditure {
+		padding-top: 70px;
+	}
+
+	.why-spendless,
+	.how-it-works {
+		display: inline-block;
+	}
+	nav li a {
+		font-size: 90%;
+	}
+	nav li a:hover {
+		border-bottom: 2px solid #ff7800;
+	}
+	label:first-child {
+		display: inline-block;
+		margin-top: 50px;
+	}
+
+	input[type='text'] {
+		width: 500px;
+		height: 50px;
+		padding: 7px;
+		margin-bottom: 20px;
+		outline: none;
+		border: none;
+		border: 1px solid #41424e;
+		border-radius: 5px;
+	}
+	.checkboxes {
+		margin-top: 20px;
+	}
+	input[type='checkbox'] {
+		width: 30px;
+		height: 23px;
+		border-radius: 5px;
+		border: 1px solid #41424e;
+	}
+
+	.cb-2,
+	.cb-3 {
+		margin-left: 150px;
+	}
+
+	input[type='submit'] {
+		margin-top: 30px;
+		width: 50%;
+		height: 50px;
+		border-radius: 5px;
+	}
+}
