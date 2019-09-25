@@ -27,7 +27,7 @@ a {
 section.banner {
     background: rgba(0, 0, 0, 0.7);
     position: relative;
-    min-height: 80vh;
+    min-height: 85vh;
 }
 section.banner::after {
     content: "";
@@ -51,9 +51,9 @@ section.banner::after {
 }
 .overlay-text {
     position: absolute;
-    top:  20%;
+    top:  9%;
     right: 50%;
-    left:10%;
+    left:6%;
     color: #fff;
     backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -111,12 +111,12 @@ section.banner::after {
 @media only screen and (max-width: 718px) {
     .overlay-text{ 
         width: 90%;
-        top: 13%;
+        top: 5%;
     }   
 }
 @media only screen and (max-width: 566px) {
     .overlay-text {
-        width: 80%
+        width:90%
     }    
 }
 @media only screen and (max-width: 428px) {
@@ -131,7 +131,11 @@ section.banner::after {
 }
 
 
-
+@media only screen and (min-width: 540px) {
+    section.tags div {
+        width: 30% !important;
+    }
+}
 @media only screen and (min-width: 810px) {
     nav i.fa-bars {display: none;}
     nav div.big-nav {
@@ -206,4 +210,46 @@ nav div.small-nav a {
 }
 nav div.small-nav a:hover {
     color: #FF7800;
+}
+
+input[name='register'] {
+    background: #FF7800;
+}
+div.modal-header {
+    background: #434450;
+}
+section.tags {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+    min-height: 40vh;
+}
+section.tags div {
+    width: 280px;
+}
+section.decision-section {width: 100%;}
+section.decision-section div {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+section.decision-section div a {
+    background-color: #FF7800;
+    min-width: 20%;
+    margin: 5% 10%;
+}
+footer {
+    background-color: #434450;
+    min-height: 10vh;
+    color: #ffffff;
+    text-align: center;
+}
+footer a {
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    padding: 5px 10px;
+    background: #434450;
+    color: #E5E5E5;
+    font-size: 1.5em;
 }
