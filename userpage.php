@@ -1,0 +1,189 @@
+<?php
+session_start();
+if(!isset($_SESSION['name'])){
+   header("Location: index.html"); 
+}        
+echo $_SESSION['name'];
+ ?>
+<!-- Angela worked on this page, please leave the style tag here to avoid conflicts -->
+<!-- If you need to make corrections, please use the style tag here. Thank you -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BudgetIt - Income</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+         .col-8{
+            padding-left: 5%;
+            padding-top: 10%;
+            color: #41424E;
+        }
+        .col-4{
+            background-color:#41424E;
+            color:#CDCDCD; 
+            line-height: 5em;
+            margin:0 auto;
+            padding-bottom: 10%;
+        }
+        .side-bar-links {
+            color: #CDCDCD;
+            
+        }
+        .side-bar-links:hover{
+            text-decoration: none;
+            color: #FF7800;
+            
+        }
+        .side-bar-list{
+            padding-left: 5%;   
+        }
+        .col-4 li {
+            border-bottom: 1px solid #CDCDCD;    
+        }
+        #net-income{
+            padding-left: 5px;
+        }
+        
+        .expenditure{
+            padding-bottom: 5%;
+        }
+        
+        .continue:hover{ 
+            background-color: #41424E!important;
+            outline: 0;
+        }
+        .continue:active{
+            outline: 0;
+            border: none !important;
+            box-shadow: none !important;
+        }
+        #user-image{
+            width:150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+ <nav class="flex">
+        <figure>
+            <img src="images/logo1-removebg-preview.png" alt="Logo" style="width: 70px; height: 70px; padding: 10px;">
+        </figure>
+        <div class="big-nav hidden">
+            <ul>
+                <a href="" class="toplinks"><li>Why BudgetIt?</li></a>
+                <a href="" class="toplinks"><li>Solutions</li></a>
+                <a href="" class="toplinks"><li>Resources</li></a>
+                <a href="" class="toplinks"><li>How it works</li></a>
+                <a href="" class="toplinks"><li>Support</li></a>
+            </ul>
+            <div>
+                <a href="logout.php" >LOG OUT</a>
+            </div>
+        </div>
+        <i class="fa fa-bars"></i>
+        <div class="small-nav hidden">
+            <a href="" class="toplinks">Why Budget It?</a>
+            <a href="" class="toplinks">Solutions</a>
+            <a href="" class="toplinks">Resources</a>
+            <a href="" class="toplinks">How it Works</a>
+            <a href="" class="toplinks">Support</a>
+            <a href="">LOG OUT</a>
+        </div>
+    </nav>
+    
+    <section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4"><br>
+                <div style="align-content: center;">
+                </div>
+                <div style="padding: 3%; font-size: 20px;">
+                    <ul class="side-bar-list">
+                        <li><i class='fas fa-home'></i> &nbsp;<a href="./index.html" class ="side-bar-links">Home</a></li>
+                        <li><i class='fa fa-user'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links">Account</a></li>
+                        <li><i class='fa fa-line-chart'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links">Dashboard</a></li>
+                        <li><i class='fa fa-gear'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links">Settings</a></li>
+                        <li><i class='fa fa-users'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links">Refer</a></li>
+                        <li><i class='fa fa-sign-out'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        <div class="col-8">
+            <div>
+                <h2><?php echo "Welcome, " .$_SESSION['name'] ?></h2>
+                <h4>We need information on your Income and Expenditure to help you plan better. Please fill in the following information:</h4> 
+                </div>
+            <br>
+            <br>
+            <div>
+                <form>
+                    <label><h5>Net Income:</h5></label><br>
+                    <input name="net-income" id="net-income" type="number" placeholder="Enter your income"><br><br><br>
+                    <div>
+                    <h6>Expenditure (select according to priority)</h6><br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div  class="expenditure"><input type="checkbox" name="Food">Food</div>
+                                <div class="expenditure"><input type="checkbox" name="Clothing">Clothing</div>
+                                <div class="expenditure"><input type="checkbox" name="Taxes">Taxes</div>
+                                <div class="expenditure"><input type="checkbox" name="Data">Data</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="expenditure"><input type="checkbox" name="Light Bills">Light Bills</div>
+                                <div class="expenditure"><input type="checkbox" name="Education">Education</div>
+                                <div class="expenditure"><input type="checkbox" name="Insurance">Insurance</div>
+                                <div class="expenditure"><input type="checkbox" name="Shopping">Shopping</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="expenditure"><input type="checkbox" name="Fun">Fun</div>
+                                <div class="expenditure"><input type="checkbox" name="Miscellaneous">Miscellaneous</div>
+                                <div class="expenditure"><input type="checkbox" name="Vehicle">Vehicle</div>
+                                <div class="expenditure"><input type="checkbox" name="Airtime">Airtime</div>
+                            </div>
+                        </div>
+                    </div> 
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                <button class="btn btn-primary continue" type="submit" style="background-color:#FF7800; border: none; padding-left: 30%; padding-right: 30%;">Continue</button>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Scripts should come below here -->
+    <script src="./js/menu-action.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--script for icons used , added by Angela -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>
