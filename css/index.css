@@ -60,11 +60,6 @@ section.banner::after {
     -webkit-backface-visibility: hidden;
 }
 .heading {
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 49px;
-    letter-spacing: 0.09em;
-    padding-bottom: 5%;
     animation-name: moveInLeft; 
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -166,15 +161,16 @@ section.banner::after {
     }
     nav div.big-nav div a:hover {
         color: #FF7800;
+        text-decoration: none;
     }
     nav div.big-nav div a:last-child {
         border-radius: 4px;
-        border: 1.5px solid #49B665;
-        color: #49B665;
-        font-weight: 900;
+        border: 1.5px solid #FF7800;
+        color: #FF7800;
+        font-weight: 600;
     }
     nav div.big-nav div a:last-child:hover {
-        background-color: #49B665;
+        background-color: #FF7800;
         color: #ffffff;
     }
     nav div.small-nav {display: none;}
@@ -252,4 +248,17 @@ footer a {
     background: #434450;
     color: #E5E5E5;
     font-size: 1.5em;
+}
+
+ .toplinks,.toplinks-login {
+            font-family: 'Nunito', sans-serif;
+        }
+        .toplinks:hover,.toplinks-login:hover,.toplinks-signup:hover { 
+            text-decoration: none;
+        }
+        .toplinks-signup:hover{
+            border-color: #FF7800;
+        }
+.index-sign-up:hover{
+    background-color: #CE6713;
 }
