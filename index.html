@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BudgetIt - Homepage</title>
+    <title>SpendLess - Home</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
@@ -13,27 +13,72 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/danstyles.css">
+    <!-- css file for sign up button pulse animation-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <style>
+        .card-box{
+            padding: 15px;
+            box-shadow: 0 0 10px #CDCDCD;
+            text-align: center;
+        
+        }
+        .card-box-text{
+            text-align: justify
+        }
+        .get-started{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        index-sign-up{
+           background-color: orange; !important
+        }
+        .index-sign-up:hover{
+            background-color: orangered;
+            color: white;
+            border: none;
+            
+        }
+        .animatedPulse {
+            animation: pulse 1s infinite;
+        }
+       
+    </style>
 </head>
 <body>
     <nav class="flex">
         <figure>
-            <img src="" alt="Logo">
+            <img src="images/logo1-removebg-preview.png" alt="Logo" style="width: 63px; height: 63px; padding: 10px;">
         </figure>
         <div class="big-nav hidden">
             <ul>
-                <a href=""><li>Why BudgetIt?</li></a>
-                <a href=""><li>Solutions</li></a>
-                <a href=""><li>Resources</li></a>
-                <a href=""><li>How it works</li></a>
-                <a href=""><li>Support</li></a>
+                <a href="" class="toplinks" ><li>Why SpendLess?</li></a>
+                <a href="" class="toplinks"><li>Solutions</li></a>
+                <a href="" class="toplinks"><li>Resources</li></a>
+                <a href="" class="toplinks"><li>How it works</li></a>
+                <a href="" class="toplinks"><li>Support</li></a>
             </ul>
             <div>
+
+                <a href="" class="toplinks-login" data-toggle="modal" data-target="#loginmodal">LOG IN</a>
+                <a href="" class="toplinks-signup" data-toggle="modal" data-target="#signup">SIGN UP</a>
+
                 <a href="" data-toggle="modal" data-target="#loginmodal">LOG IN</a>
                 <a href="" data-toggle="modal" data-target="#signup">SIGN UP</a>
+
             </div>
         </div>
         <i class="fa fa-bars"></i>
         <div class="small-nav hidden">
+
+            <a href="" class="toplinks">Why Budget It?</a>
+            <a href="" class="toplinks">Solutions</a>
+            <a href="" class="toplinks">Resources</a>
+            <a href="" class="toplinks">How it Works</a>
+            <a href="" class="toplinks">Support</a>
+            <a href=""  class="toplinks-login" data-toggle="modal" data-target="#loginmodal">LOG IN</a>
+            <a href="" class="toplinks-signup" data-toggle="modal" data-target="#signup">SIGN UP</a>
+
             <a href="">Why Budget It?</a>
             <a href="">Solutions</a>
             <a href="">Resources</a>
@@ -41,18 +86,72 @@
             <a href="">Support</a>
             <a href="" data-toggle="modal" data-target="#loginmodal">LOG IN</a>
             <a href="" data-toggle="modal" data-target="#signup">SIGN UP</a>
+
         </div>
     </nav>
     
     <section class="banner">        
         <div class="overlay-text">
-            <h1 class="heading">Financial Peace In Your Life</h1>
-                
-            <p>BudgetIt allows you to be in charge of your money. Balance your earnings and your expenses. Understand what you spend your money on. Set and attain your financial aims perfectly.
+            <br><br><br>
+            <h1 class="heading" style="font-weight: 700;">Financial Peace In Your Life</h1><br>
+            <p style="font-weight: 400; color: white;">SpendLess allows you to be in charge of your money. Balance your earnings and your expenses. Understand what you spend your money on. Set and attain your financial aims perfectly.
             </p>
         </div>
     </section>
     <section>
+
+    <div class="container-fluid" style="width: 100%; height: 100%; background-color: #f5f6f9; padding: 5% 10% 5% 10% ;">
+        <div class="container-fluid">
+            <div class="row">
+				<div class="col-sm-12">
+					<h2 style="text-align: center;">Outstanding features</h2>
+				</div>
+                </div>
+                <br><br>
+                <div class=row>
+				<div class="col-md-4">
+					<div class="card-box card">
+						<h5> All in One? <span style="color: orange;">Done</span></h5>
+						<p class="card-box-text">
+						 We bring all your expenditures to one place, from balances, utility bills, data top-up and much more.
+						</p>
+					</div>
+
+				</div>
+				<div class="col-md-4">
+					<div class="card-box card">
+                        <h5>Bills? <span style="color: orange;"> Paid</span></h5>
+						<p class="card-box-text">
+							Create your budgets with ease and preview our summary based on all your expenditure.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card-box card">
+                        <h5> Credit? <span style="color: orange;">Checked</span></h5>
+						<p class="card-box-text">
+							Check your Savings and Expenses based on your budgets and get valuable tips to help improve it.</p>
+					</div>
+				</div>
+			</div>
+        </div>
+        </div>
+    </section>
+     <section>
+        <div class="container-fluid lines" style="width: 100%; color: white; height: 100%; padding: 5% 10% 5% 10% ; background-color: #212529; ">
+            <div class="row">
+                <div class="col-12" style="text-align: justify;">
+                    <h4>About Us</h4>
+                    <p>The idea behind SpendLess is that we need the best tool to manage our personal finances.
+                    Some people use Microsoft Excel, others use paper and pen, and some use personal accounting
+                    software but also, most of us just don’t know what to do and how to go about it. Our financial
+                        lives are complicated, cards, cash, savings, debt and we are not all born blessed accountants. </p>
+                    <p>
+                    We kicked-off on a journey to solve financial problems. Hence SpendLess was born a simple and perfect 
+                    tool to manage your personal finances. SpendLess wants to offer you an all round view of your money, 
+                    what you are receiving, what you are spending, what you’ve saved. SpendLess wants to give you the best
+                    tools to understand where your money goes, and enable you to set and achieve your financial aims.</p>
+
         <div class="container-fluid">
             <div class="col-md-6">
                 <h3 class="text-center">About Us</h3>
@@ -93,19 +192,31 @@
                     <p>
                         BudgetIt wants to offer you an all round view of your money, what you are receiving, what you are spending, what you’ve saved.
                     </p>
+
                 </div>
             </div>
         </div>
     </section>
-    <section class="decision-section">
-        <div>
-            <a href="" class="btn btn-default signup-btn" data-toggle="modal" data-target="#loginmodal">LOGIN</a>
-            <a href="" class="btn btn-default signup-btn" data-toggle="modal" data-target="#signup">SIGN UP</a>
+    <section class="decision-sectioncontainer-fluid">
+    <div class="col-sm-12" style="color: white; line-height: 0.5em; text-align: center; background-image: url(images/get-started-bg-image.jpg); background-size: auto; background-repeat: no-repeat; padding: 10% 10% 10% 10% ; height: 100%;">
+        <div class="row">
+            <div class="col-sm-6">
+            </div>
+            <div class="col-sm-6">
+			<h2 style="color: #212529;"> Get Started Today</h2><br>
+			<p style="color: #212529;"> Let's help you manage your Finances!</p><br>
+			<button href="" class="btn signup-btn animatedPulse index-sign-up" style="padding-left: 5%; padding-right: 5%; background-color: #FF7800; color: white;" data-toggle="modal" data-target="#signup">SIGN UP</button> &nbsp;&nbsp;&nbsp;&nbsp;
+        <br><br>
+		    </div>
+        </div>
         </div>
     </section>
 
 
+
+
     
+
 
     <section id="Modal-section">
         <!-- <button type="button" class="btn btn-default signup-btn" data-toggle="modal" data-target="#signup">
@@ -147,7 +258,11 @@
                                             <input type="submit" name="login" class="form-control" id="signup-btn" value="LOGIN">
                                         </div>
                                         <div class="word3">
+
+                                            <h6>Don't have an account? <a href="#loginmodal"> <span style="color: #5f5f5f" > <b>Sign up</b></span> </a></h6>
+
                                             <h6>Don't have an account? <a href=""  data-toggle="modal" data-target="#signup"> <span style="color: #5f5f5f" > <b>Sign up</b></span> </a></h6>
+
                                         </div>
                                     </form>
                                 </div>
@@ -177,6 +292,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
+                <br>
             </div>
             <div class="modal-body">
                 <div id="form">
@@ -206,7 +322,7 @@
                                         <input type="password" name="pwd" class="form-control" placeholder="Re-enter Your Password">
                                     </div>
                                     <div class="form-group">
-                                        <input type="submit" name="register" class="form-control" value="Sign up">
+                                        <input type="submit" style="color: white;" name="register" class="form-control" value="Sign up">
                                     </div>
                                     <div class="word1">
                                         <h6>Already have an account? <a href="" data-toggle="modal" data-target="#loginmodal">Log in</a></h6>
@@ -230,8 +346,8 @@
         </div>                
     </section>
 
-    <footer>
-        By Team Ganymede - HNGi6 &copy; 2019. 
+    <footer style="padding-top: 1.5%;">
+        Team Ganymede - HNGi6 &copy; 2019. 
         <a href="#"><i class="fa fa-angle-double-up"></i></a>
     </footer>
   
@@ -244,5 +360,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+    </script>
 </body>
 </html>
