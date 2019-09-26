@@ -127,8 +127,12 @@ section.banner::after {
 
 
 @media only screen and (min-width: 540px) {
-    section.tags div {
+    /* div.shadow {
         width: 30% !important;
+    } */
+    div.shadow {
+        margin: 5px;
+        flex: 1;
     }
 }
 @media only screen and (min-width: 810px) {
@@ -214,14 +218,15 @@ input[name='register'] {
 div.modal-header {
     background: #434450;
 }
-section.tags {
+div.row {
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 30px;
+    padding: 5px;
     min-height: 40vh;
 }
-section.tags div {
+div.shadow {
     width: 280px;
+    margin: 5px;
 }
 section.decision-section {width: 100%;}
 section.decision-section div {
@@ -250,6 +255,7 @@ footer a {
     font-size: 1.5em;
 }
 
+
  .toplinks,.toplinks-login {
             font-family: 'Nunito', sans-serif;
         }
@@ -261,4 +267,11 @@ footer a {
         }
 .index-sign-up:hover{
     background-color: #CE6713;
+
+div.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+r
 }
