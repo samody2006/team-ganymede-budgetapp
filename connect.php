@@ -10,7 +10,7 @@ $conn = mysqli_connect($db_host, $db_user, $db_password, $db_name);
 if (!$conn){
     echo ("database not connected". mysqli_error($conn));
 }else{
-    echo(" database connected");
+    //echo(" database connected");
 }
 
 ?>
