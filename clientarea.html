@@ -80,7 +80,7 @@
                 <a href="" class="toplinks"><li>Support</li></a>
             </ul>
             <div>
-                <a href="" >LOG OUT</a>
+                <a href="logout.php" >LOG OUT</a>
             </div>
         </div>
         <i class="fa fa-bars"></i>
@@ -90,7 +90,7 @@
             <a href="" class="toplinks">Resources</a>
             <a href="" class="toplinks">How it Works</a>
             <a href="" class="toplinks">Support</a>
-            <a href="">LOG OUT</a>
+            <a href="logout.php">LOG OUT</a>
         </div>
     </nav>
     
@@ -103,11 +103,11 @@
                 <div style="padding: 3%; font-size: 20px;">
                     <ul class="side-bar-list">
                         <li><i class='fas fa-home'></i> &nbsp;<a href="./index.html" class ="side-bar-links">Home</a></li>
-                        <li><i class='fa fa-user'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links">Account</a></li>
-                        <li><i class='fa fa-line-chart'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links">Dashboard</a></li>
-                        <li><i class='fa fa-gear'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links">Settings</a></li>
-                        <li><i class='fa fa-users'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links">Refer</a></li>
-                        <li><i class='fa fa-sign-out'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links">Logout</a></li>
+                        <li><i class='fa fa-user'></i>&nbsp;&nbsp;&nbsp;<a href="#" class ="side-bar-links">Account</a></li>
+                        <li><i class='fa fa-line-chart'></i>&nbsp;&nbsp;&nbsp;<a href="#" class ="side-bar-links">Dashboard</a></li>
+                        <li><i class='fa fa-gear'></i>&nbsp;&nbsp;&nbsp;<a href="#" class ="side-bar-links">Settings</a></li>
+                        <li><i class='fa fa-users'></i>&nbsp;&nbsp;&nbsp;<a href="#" class ="side-bar-links">Refer</a></li>
+                        <li><i class='fa fa-sign-out'></i>&nbsp;&nbsp;&nbsp;<a href="logout.php" class ="side-bar-links">Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -115,58 +115,53 @@
             <div>
                 <h4>We need information on your Income and Expenditure to help you plan better. Please fill in the following information:</h4> 
                 </div>
-            <br>
-            <br>
-            <div>
-                <form>
+                <div>
+              <form id="budgetform">
                     <label><h5>Net Income:</h5></label><br>
-                    <input name="net-income" id="net-income" type="number" placeholder="Enter your income"><br><br><br>
-                    <div>
-                    <h6>Expenditure (select according to priority)</h6><br>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div  class="expenditure"><input type="checkbox" name="Food">Food</div>
-                                <div class="expenditure"><input type="checkbox" name="Clothing">Clothing</div>
-                                <div class="expenditure"><input type="checkbox" name="Taxes">Taxes</div>
-                                <div class="expenditure"><input type="checkbox" name="Data">Data</div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="expenditure"><input type="checkbox" name="Light Bills">Light Bills</div>
-                                <div class="expenditure"><input type="checkbox" name="Education">Education</div>
-                                <div class="expenditure"><input type="checkbox" name="Insurance">Insurance</div>
-                                <div class="expenditure"><input type="checkbox" name="Shopping">Shopping</div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="expenditure"><input type="checkbox" name="Fun">Fun</div>
-                                <div class="expenditure"><input type="checkbox" name="Miscellaneous">Miscellaneous</div>
-                                <div class="expenditure"><input type="checkbox" name="Vehicle">Vehicle</div>
-                                <div class="expenditure"><input type="checkbox" name="Airtime">Airtime</div>
-                            </div>
-                        </div>
-                    </div> 
-                    <br>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div>
-                                <button class="btn btn-primary continue" type="submit" style="background-color:#FF7800; border: none; padding-left: 30%; padding-right: 30%;">Continue</button>
-                                    <br><br>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div>
-                                </div>
-                            </div>
-                        </div>
+                    <input name="net-income" id="userbudget" type="number" placeholder="Enter your income"> 
+                    <button type="submit" class="btn  btn-outline-warning" id="budgetButton">add</button> 
+                    <h4 class="text-uppercase mt-2 budget"><span>&#8358; 
+                    <span id="addedBudgetResponseMessage"> </span></span>
+                    <span id="budgetResponseMessage" >  </span></h4> 
+                </form>
+                
+                 <form id="expenseform">
+                    <div class="col-8">
+                    <h6>Enter Expenditure and select according to priority)</h6>
+                    <div class="form-group multiple-form-group input-group">
+                    <div class="input-group-btn input-group-select">
+                            <select id="priorities">
+                            <option value="0">Select Priority</option>
+                            <option value="2">Average</option>
+                            <option value="1">High</option>
+                            <option value="3">Low</option>
+                            </select> 
                     </div>
+                        <input type="text" name="expensename" id="expensename" placeholder="Item">
+                        <button type="submit" class="btn btn-outline-warning">Add</button>
+                        <span id="expenseResponseMessage" ></span>
+                        <span id="addedExpenseResponseMessage"></span>
+                    </div>   
                     </div>
                 </form>
-            </div>
+                        <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                            <button id="calculate" class="btn btn-primary submit-btn" type="submit" style="background-color:#FF7800; border: none; ">CALCULATE BUDGET</button>
+                             </div><br>
+        <table id="table" class="table">
+            <thead class="thead-light">
+            <tr >
+            <th><h5 class="list-item ">Expense title</h5></th>
+            <th><h5 class="list-item ">Priority</h5></th>
+            <th><h5 class="list-item ">Expense value</h5></th>
+            </tr>
+            </thead>
+        </table>
+                           
+                    </div>
+                    </div>
+                   </div>
         </div>
     </div>
 </div>
@@ -178,5 +173,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!--script for icons used , added by Angela -->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src='js/calculator.js'></script>
 </body>
 </html>
