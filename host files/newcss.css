@@ -1,0 +1,97 @@
+
+section{
+    margin-bottom: 100px;
+}
+.signup-content{
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    border: 1px #DBA80B solid;
+    width: auto;
+    margin: 50px 10px 0 0;
+    padding: 30px;
+    
+  
+}
+.formHeader{
+    background-color: #ddb903 !important;
+    width: 100%;
+    margin-bottom: 5%;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    
+    
+}
+.formSize{
+    width: auto;
+    
+}
+
+footer{
+    background-color: #343a40;
+    text-align:center;
+    margin: 0px;
+    color: white;
+    font-size: 16px;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+
+}
+.footerText{
+    padding-top: 10px;
+    
+}
+.errorMessage{
+    color: red;
+}
+section{
+    margin-bottom: 100px;
+}
+.signup-content{
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    border: 1px #DBA80B solid;
+    width: auto;
+    margin: 50px 10px 0 0;
+    padding: 30px;
+    
+  
+}
+.formHeader{
+    background-color: #ddb903 !important;
+    width: 100%;
+    margin-bottom: 5%;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    
+    
+}
+.formSize{
+    width: auto;
+    
+}
+
+footer{
+    background-color: #343a40;
+    text-align:center;
+    margin: 0px;
+    color: white;
+    font-size: 16px;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+
+}
+.footerText{
+    padding-top: 10px;
+    
+}
+.errorMessage{
+    color: red;
+}

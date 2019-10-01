@@ -1,0 +1,13 @@
+body{
+    background-color: white;
+    padding-left: 30%;
+    padding-right: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+label{
+    width:30%;
+}
+input{
+    width: 70%;
+}
