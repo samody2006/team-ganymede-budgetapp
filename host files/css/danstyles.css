@@ -1,0 +1,63 @@
+#landing-page-images-container {
+	background: url('https://res.cloudinary.com/joshuafolorunsho/image/upload/v1569366790/hector-j-rivas-1FxMET2U5dU-unsplash_1.png');
+	height: 80vh;
+	width: 100%;
+	background-size: cover;
+}
+
+#landing-page-images-right {
+	background: url('https://res.cloudinary.com/joshuafolorunsho/image/upload/v1569366791/adeolu-eletu-unRkg2jH1j0-unsplash_2.png');
+	width: 100%;
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.4;
+}
+
+#landing-page-images-left {
+	background: url('https://res.cloudinary.com/joshuafolorunsho/image/upload/v1569366786/hector-j-rivas-1FxMET2U5dU-unsplash_1_1.png');
+	width: 100%;
+	height: 80vh;
+	background-size: cover;
+	/* display: flex; */
+}
+
+#landing-page-images-left h2 {
+	color: white;
+	text-align: center;
+	margin-top: 30%;
+	margin-left: 15%;
+}
+
+#landing-page-images-left p {
+	color: white;
+	text-align: justify;
+	margin-left: 20%;
+	font-size: 1.15rem;
+}
+
+#about-paragraph {
+	text-align: justify;
+#about-paragraph{
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+	#landing-page-images-right {
+		display: none;
+	}
+
+	#landing-page-images-left h2 {
+		color: white;
+		text-align: center;
+		margin-top: 30%;
+		margin-left: 0;
+	}
+
+	#landing-page-images-left p {
+		color: white;
+		text-align: justify;
+		margin-left: 0;
+		font-size: 1.15rem;
+	}
+}

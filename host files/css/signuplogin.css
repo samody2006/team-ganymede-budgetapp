@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,800&display=swap');
+
+.container1{
+	background-color: #f0f0f0;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-size: 17px;
+   font-family: 'Nunito', sans-serif;
+	font-weight: lighter;
+	margin: 20px auto;
+	width: 80%;
+	height: 700px;
+	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);   
+}
+
+header{
+	background-color: #ff7800;
+	color: white;
+	height: 40px;
+}
+header > p{
+	font-size: 1.3em;
+   text-align: center;
+   line-height: 40px;
+}
+.signup-login-container{
+	margin: 20px 0px;
+	text-align: center;
+}
+.signup, .login{
+	width: 100px;
+	height: 35px;
+	cursor: pointer;
+	border: none;
+}
+.signup{
+	background-color: rgb(65, 66, 78); 
+	color:white;
+}
+.login{
+	background-color: white;
+	margin-left: -5px;
+}
+
+.signup-form1,
+.login-form1{
+   display: flex;
+   justify-content: center;
+}
+
+.login-form1{
+	display: none;
+}
+
+label {
+	font-weight: bold;
+}
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='submit'] {
+	width: 240px;
+	height: 40px;
+	padding: 5px;
+	outline: none;
+	border-radius: 2px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type="password"] {
+	margin-bottom: 17px;
+}
+
+input[type='submit']{
+	margin-top: 17px;
+	background-color: #ff7800;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 680px){
+	.container1{
+		font-size: 20px;
+	}
+	
+	input[type='text'],
+	input[type='email'],
+	input[type='password'],
+	input[type='submit'] {
+	width: 340px;
+	height: 40px;
+	padding: 5px;
+	outline: none;
+	border-radius: 2px;
+	}
+}
+
+@media screen and (min-width: 95px){
+	.container1{
+		font-size: 20px;
+		width: 50%;
+	}
+	
+	input[type='text'],
+	input[type='email'],
+	input[type='password'],
+	input[type='submit'] {
+	width: 400px;
+	height: 40px;
+	padding: 5px;
+	outline: none;
+	border-radius: 2px;
+	}
+}
