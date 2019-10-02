@@ -102,7 +102,7 @@ if(isset($_POST['submit'])){
 				header('Location: budgetindex.php?id='.$user_budget_id);
 	}
 ?>*/?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -134,6 +134,12 @@ if(isset($_POST['submit'])){
             color: #CDCDCD;
             
         }
+        @media (max-width:350px){
+            #word{
+                font-size: 100%;
+                text-align: center;
+            }
+        }
         .side-bar-links:hover{
             text-decoration: none;
             color: #FF7800;
@@ -143,7 +149,8 @@ if(isset($_POST['submit'])){
         /*display on mobile*/
         .side-bar-list{
             padding-left: 0;  
-            font-size: 60%; 
+            font-size: 11px;
+            
         }
         /* display on other bigger devices*/
         @media (min-width:380px){
@@ -154,7 +161,7 @@ if(isset($_POST['submit'])){
         }
         @media (min-width:450px){
             .side-bar-list{
-                padding-left: 1%;
+                padding-left: 2%;
                 font-size: 90%;
             }
         }
@@ -165,6 +172,7 @@ if(isset($_POST['submit'])){
             }
         }
 
+    
         .col-4 li {
             border-bottom: 1px solid #CDCDCD;    
         }
@@ -229,7 +237,7 @@ if(isset($_POST['submit'])){
             <div class="col-4"><br>
                 <div style="align-content: center;">
                 </div>
-                <div style="padding: 3%; font-size: 20px;">
+                <div style="padding: 3%;">
                     <ul class="side-bar-list">
                         <li><i class='fas fa-home'></i> &nbsp;<a href="./index.html" class ="side-bar-links">Home</a></li>
                         <li><i class='fa fa-user'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links">Account</a></li>
@@ -244,7 +252,7 @@ if(isset($_POST['submit'])){
         <div class="col-8">
             <div>
                 <h2></h2>
-                <h4>We need information on your Income and Expenditure to help you plan better. Please fill in the following information:</h4> 
+                <h4 id="word">We need information on your Income and Expenditure to help you plan better. Please fill in the following information:</h4> 
                 </div>
             <br>
             <br>
@@ -302,5 +310,6 @@ if(isset($_POST['submit'])){
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/menu-action.js"></script>
 </body>
 </html>

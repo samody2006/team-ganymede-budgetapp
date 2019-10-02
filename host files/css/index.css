@@ -111,7 +111,7 @@ section.banner::after {
 /*}*/
 @media only screen and (max-width: 566px) {
     .overlay-text {
-        width:50%
+        width:50%;
         font-size: 18px;
         line-height: 20px;
     }    
@@ -274,11 +274,11 @@ footer a {
         }
 .index-sign-up:hover{
     background-color: #CE6713;
-
+}
 div.container-fluid {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-r
+
 }
