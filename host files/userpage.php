@@ -1,5 +1,4 @@
 <?php
-/*
 session_start();
 ob_start();
 
@@ -101,7 +100,7 @@ if(isset($_POST['submit'])){
 				}
 				header('Location: budgetindex.php?id='.$user_budget_id);
 	}
-?>*/?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -173,10 +172,6 @@ if(isset($_POST['submit'])){
             }
         }
 
-        input[type='number']{
-            width: 100%;
-        }
-
     
         .col-4 li {
             border-bottom: 1px solid #CDCDCD;    
@@ -215,11 +210,11 @@ if(isset($_POST['submit'])){
         </figure>
         <div class="big-nav hidden">
             <ul>
-                <a href="" class="toplinks"><li>Why BudgetIt?</li></a>
-                <a href="" class="toplinks"><li>Solutions</li></a>
-                <a href="" class="toplinks"><li>Resources</li></a>
-                <a href="" class="toplinks"><li>How it works</li></a>
-                <a href="" class="toplinks"><li>Support</li></a>
+                <a href="#" class="toplinks"><li>Why BudgetIt?</li></a>
+                <a href="#" class="toplinks"><li>Solutions</li></a>
+                <a href="#" class="toplinks"><li>Resources</li></a>
+                <a href="#" class="toplinks"><li>How it works</li></a>
+                <a href="#" class="toplinks"><li>Support</li></a>
             </ul>
             <div>
                 <a href="logout.php" >LOG OUT</a>
@@ -227,12 +222,12 @@ if(isset($_POST['submit'])){
         </div>
         <i class="fa fa-bars"></i>
         <div class="small-nav hidden">
-            <a href="" class="toplinks">Why Budget It?</a>
-            <a href="" class="toplinks">Solutions</a>
-            <a href="" class="toplinks">Resources</a>
-            <a href="" class="toplinks">How it Works</a>
-            <a href="" class="toplinks">Support</a>
-            <a href="">LOG OUT</a>
+            <a href="#" class="toplinks">Why Budget It?</a>
+            <a href="#" class="toplinks">Solutions</a>
+            <a href="#" class="toplinks">Resources</a>
+            <a href="#" class="toplinks">How it Works</a>
+            <a href="#" class="toplinks">Support</a>
+            <a href="logout.php">LOG OUT</a>
         </div>
     </nav>
     
@@ -265,7 +260,7 @@ if(isset($_POST['submit'])){
             <form action="" id="add_name" method="post">
                 <div class="form-group">
                     <label class="h5">Net Income:</label>
-                    <input type="number" name="net_income" class="remove-glow border-black rounded form-control col-md-3 pl-3">
+                    <input type="number" style="width:100%;" name="net_income" class="remove-glow border-black rounded form-control col-md-3 pl-3" placeholder="Income amount">
                 </div>
                 <h5>Expenditures:</h5>
                 <button type="button" class="btn btn-success" id="add">
