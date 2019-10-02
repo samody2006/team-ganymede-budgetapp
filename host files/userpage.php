@@ -1,5 +1,5 @@
 <?php
-
+/*
 session_start();
 ob_start();
 
@@ -101,7 +101,7 @@ if(isset($_POST['submit'])){
 				}
 				header('Location: budgetindex.php?id='.$user_budget_id);
 	}
-?>
+?>*/?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -139,9 +139,32 @@ if(isset($_POST['submit'])){
             color: #FF7800;
             
         }
+        /* making side bar responsive */
+        /*display on mobile*/
         .side-bar-list{
-            padding-left: 5%;   
+            padding-left: 0;  
+            font-size: 60%; 
         }
+        /* display on other bigger devices*/
+        @media (min-width:380px){
+            .side-bar-list{
+                padding-left: 1%;
+                font-size: 80%;
+            }
+        }
+        @media (min-width:450px){
+            .side-bar-list{
+                padding-left: 1%;
+                font-size: 90%;
+            }
+        }
+        @media (min-width:720px){
+            .side-bar-list{
+                padding-left: 5%;
+                font-size: 100%;
+            }
+        }
+
         .col-4 li {
             border-bottom: 1px solid #CDCDCD;    
         }
