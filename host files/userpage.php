@@ -197,6 +197,26 @@ if(isset($_POST['submit'])){
             width:150px;
             height: 150px;
         }
+
+         /* TOUR STYLES BY 15SAMUEL15*/
+         .shepherd-button-secondary {
+            background-color: #fd7e14 !important;
+            color: #fff !important;
+            transition: all 0.3s ease-in;
+        }
+
+        .shepherd-button-secondary:hover {
+            background-color: grey !important;
+        }
+
+        .shepherd-button-primary {
+            background-color: #007bff !important;
+            color: #fff !important;    
+        }
+
+        .shepherd-button-primary:hover {
+            background-color: #fd7e14 !important;
+        }
     </style>
 </head>
 <body>
@@ -239,13 +259,13 @@ if(isset($_POST['submit'])){
                 </div>
                 <div style="padding: 3%;">
                     <ul class="side-bar-list">
-                        <li><i class='fas fa-home'></i> &nbsp;<a href="./index.html" class ="side-bar-links">Home</a></li>
-                        <li><i class='fa fa-user'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links">Account</a></li>
-                        <li><i class='fa fa-line-chart'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links">Dashboard</a></li>
-                        <li><i class='fa fa-line-chart'></i>&nbsp;&nbsp;&nbsp;<a href="budgt_chart.php" class ="side-bar-links">Budget Chart</a></li>
-                        <li><i class='fa fa-gear'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links">Settings</a></li>
-                        <li><i class='fa fa-users'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links">Refer</a></li>
-                        <li><i class='fa fa-sign-out'></i>&nbsp;&nbsp;&nbsp;<a href="logout.php" class ="side-bar-links">Logout</a></li>
+                        <li><i class='fas fa-home'></i> &nbsp;<a href="./index.html" class ="side-bar-links first">Home</a></li>
+                        <li><i class='fa fa-user'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links second">Account</a></li>
+                        <li><i class='fa fa-line-chart'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links third">Dashboard</a></li>
+                        <li><i class='fa fa-line-chart'></i>&nbsp;&nbsp;&nbsp;<a href="budgt_chart.php" class ="side-bar-links fourth">Budget Chart</a></li>
+                        <li><i class='fa fa-gear'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links fifth">Settings</a></li>
+                        <li><i class='fa fa-users'></i>&nbsp;&nbsp;&nbsp;<a href="" class ="side-bar-links seventh">Refer</a></li>
+                        <li><i class='fa fa-sign-out'></i>&nbsp;&nbsp;&nbsp;<a href="logout.php" class ="side-bar-links out">Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -311,5 +331,265 @@ if(isset($_POST['submit'])){
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
+    <!-- TOUR JAVASCRIPT CODE BY 15SAMUEL15  -->
+    <script src="https://cdn.jsdelivr.net/npm/shepherd.js@latest/dist/js/shepherd.min.js"></script>
+
+<script>
+
+const tour = new Shepherd.Tour({
+    defaultStepOptions: {
+        cancelIcon: {
+        enabled: true
+            },
+            classes: 'shepherd-theme-custom',
+            scrollTo: { behavior: 'smooth', block: 'center' }
+        }
+        });
+
+        tour.addStep({
+        title: 'Welcome to Spendless Dashboard',
+        text: `Follow me as I take you on a tour about the features of this page.
+                P.S : Some of the links aren't currently available, the pages are currently being developed.`,
+        attachTo: {
+            element: '.start',
+            on: 'top'
+        },
+        buttons: [
+            {
+            action() {
+                return this.back();
+            },
+            classes: 'shepherd-button-secondary',
+            text: 'Back'
+            },
+            {
+            action() {
+                return this.next();
+            },
+            classes: 'shepherd-button-primary',
+            text: 'Next'
+            }
+        ],
+        id: 'creating'
+        });
+
+
+        tour.addStep({
+        title: 'Home Page Link',
+        text: `This link takes you to the home page of this site.`,
+        attachTo: {
+            element: '.first',
+            on: 'top'
+        },
+        buttons: [
+            {
+            action() {
+                return this.back();
+            },
+            classes: 'shepherd-button-secondary',
+            text: 'Back'
+            },
+            {
+            action() {
+                return this.next();
+            },
+            classes: 'shepherd-button-primary',
+            text: 'Next'
+            }
+        ],
+        id: 'creating'
+        });
+        
+        tour.addStep({
+        title: 'Check your Account',
+        text: `This link takes you to the page where you get to see details of your statement of cash flow.`,
+        attachTo: {
+            element: '.second',
+            on: 'bottom'
+        },
+        buttons: [
+            {
+            action() {
+                return this.back();
+            },
+            classes: 'shepherd-button-secondary',
+            text: 'Back'
+            },
+            {
+            action() {
+                return this.next();
+            },
+            classes: 'shepherd-button-primary',
+            text: 'Next'
+            }
+        ],
+        id: 'creating'
+        });
+
+        tour.addStep({
+        title: 'Dashboard',
+        text: `This is the current page you are on, this
+                 page gives you various ways of checking how you have been handling your finances.`,
+        attachTo: {
+            element: '.third',
+            on: 'bottom'
+        },
+        buttons: [
+            {
+            action() {
+                return this.back();
+            },
+            classes: 'shepherd-button-secondary',
+            text: 'Back'
+            },
+            {
+            action() {
+                return this.next();
+            },
+            classes: 'shepherd-button-primary',
+            text: 'Next'
+            }
+        ],
+        id: 'creating'
+        });
+
+        tour.addStep({
+        title: 'Budget Chart Link',
+        text: `This link takes you to a page where you create your budgets with ease and preview 
+                our summary based on all your expenditure.`,
+        attachTo: {
+            element: '.fourth',
+            on: 'bottom'
+        },
+        buttons: [
+            {
+            action() {
+                return this.back();
+            },
+            classes: 'shepherd-button-secondary',
+            text: 'Back'
+            },
+            {
+            action() {
+                return this.next();
+            },
+            classes: 'shepherd-button-primary',
+            text: 'Next'
+            }
+        ],
+        id: 'creating'
+        });
+
+        tour.addStep({
+        title: 'Settings Link',
+        text: `This link takes you to the Settings page for instance if you want to tighten the security 
+                of your account - this is where you are to click.`,
+        attachTo: {
+            element: '.fifth',
+            on: 'bottom'
+        },
+        buttons: [
+            {
+            action() {
+                return this.back();
+            },
+            classes: 'shepherd-button-secondary',
+            text: 'Back'
+            },
+            {
+            action() {
+                return this.next();
+            },
+            classes: 'shepherd-button-primary',
+            text: 'Next'
+            }
+        ],
+        id: 'creating'
+        });
+
+        tour.addStep({
+        title: 'Referral Link',
+        text: `Are you enjoying our service? Click this link to see how you can get to refer
+                friends here and what you stand to get for that.`,
+        attachTo: {
+            element: '.seventh',
+            on: 'bottom'
+        },
+        buttons: [
+            {
+            action() {
+                return this.back();
+            },
+            classes: 'shepherd-button-secondary',
+            text: 'Back'
+            },
+            {
+            action() {
+                return this.next();
+            },
+            classes: 'shepherd-button-primary',
+            text: 'Next'
+            }
+        ],
+        id: 'creating'
+        });
+
+        tour.addStep({
+        title: 'Log out link',
+        text: `Click this link when you are through navigating this site. Thank you.`,
+        attachTo: {
+            element: '.out',
+            on: 'bottom'
+        },
+        buttons: [
+            {
+            action() {
+                return this.back();
+            },
+            classes: 'shepherd-button-secondary',
+            text: 'Back'
+            },
+            {
+            action() {
+                return this.next();
+            },
+            classes: 'shepherd-button-primary',
+            text: 'Next'
+            }
+        ],
+        id: 'creating'
+        });
+
+
+        tour.addStep({
+        title: 'THANKS FOR TAKING THIS TOUR',
+        text: `You are now good to go. Navigating the nooks and crannies of Spendless.....`,
+        attachTo: {
+            element: '.start',
+            on: 'top'
+        },
+        buttons: [
+            {
+            action() {
+                return this.back();
+            },
+            classes: 'shepherd-button-secondary',
+            text: 'Back'
+            },
+            {
+            action() {
+                return this.next();
+            },
+            classes: 'shepherd-button-primary',
+            text: 'Next'
+            }
+        ],
+        id: 'creating'
+        });
+
+        tour.start();
+
+</script>
+
 </body>
 </html>
