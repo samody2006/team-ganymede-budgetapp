@@ -59,6 +59,7 @@ header("Location: userpage.php");
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="newcss.css">
+    <link rel="stylesheet" href="./css/terms.css">
 
     <title>Sign Up</title>
 
@@ -96,7 +97,35 @@ header("Location: userpage.php");
               
             </div>
           </nav>
-          
+            <section class="modal-dark">
+              <div class="modal-container">
+                <header>
+                  <h4>
+                  Terms of service
+                  <span>x</span>
+                  </h4>
+                </header>
+                <main>
+                  <h6>Welcome to SpendLess</h6>
+                  <p>1. Accepting the Terms <br>
+
+1.1 In order to use the Services, you must first agree to the Terms. You may not use the Services if you do not accept the Terms. <br> 
+
+1.2 You can accept the Terms by: <br>
+
+(A) clicking to accept or agree to the Terms, where this option is made available to you by Spendless in the user interface for any Service. <br> <br>
+
+2. Use of the Services by you <br>
+
+2.1 In order to access certain Services, you may be required to provide information about yourself (such as identification or contact details) as part of the registration process for the Service. You agree that any registration information you give to Spendless will always be accurate, correct and up to date. <br> <br>
+
+3. Your passwords and account security <br>
+3.1 Accordingly, you agree that you will be solely responsible to Google for all activities that occur under your account.
+
+                </p>
+                </main>
+              </div>
+            </section>
 
             <section class="signup">
                 <div class="container h-100">
@@ -174,5 +203,6 @@ header("Location: userpage.php");
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="newjs.js"></script>
+    <script src="terms.js"></script>
 </body>
 </html>
