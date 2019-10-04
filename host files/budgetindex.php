@@ -166,6 +166,14 @@ if(isset($_GET['id'])){
       </tbody>
   </table>
   <a class="button btn btn-danger" href="userpage.php">Back</a>
+<button  class="btn btn-success" onclick="myFunction()">Print</button>
+
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
+
  </div>
 
 
